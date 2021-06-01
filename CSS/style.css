@@ -12,6 +12,9 @@
   --main-border: 1px solid rgba(255, 255, 255, 0.4);
   --main-bg: #dbd2d2;
   --time-line: #f8f8f8;
+  --shadow: rgb(214, 214, 214);
+  --box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+  --cal: black;
 }
 
 [data-theme="dark"] {
@@ -23,6 +26,9 @@
   --main-border: 1px solid rgba(255, 255, 255, 0.2);
   --main-bg: #111312f6;
   --time-line: #0a0a0a;
+  --shadow: rgb(59, 59, 59);
+  --box-shadow: 1px 1px 2px #faf4f4 , -2px -2px 10px #b6acac;
+  --cal: white;
 }
 
 
@@ -624,7 +630,7 @@ nav {
   margin: -20px auto;
   border-radius: 10px;
   background: var(--time-line);
-  box-shadow: 5px 5px 10px gray, -5px -5px 10px white;
+  box-shadow: 1px 1px 5px gray, -1px -1px 5px white;
 }
 
 .cal-box{
@@ -635,13 +641,13 @@ nav {
 #display{
   border: none;
   outline: none;
-  color: black;
+  color: var(--font-color);
   text-align: right;
   font-weight: 600;
   padding: 13px;
   margin: 40px 10 10px -7;
   background: transparent;
-  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  box-shadow: inset 2px 2px 5px #babecc, inset -1px -1px 5px #fff;
 }
 
 .button{
@@ -654,8 +660,8 @@ nav {
     font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb(214, 214, 214);
-    box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+    background: var(--shadow);
+    box-shadow: var(--box-shadow);
     display: inline-block;
 }
 
@@ -669,6 +675,6 @@ nav {
 }
 
 .mathbutton{
-  background: black;
-  color: white;
+  background: var(--cal);
+  color: var(--time-line);
 }
