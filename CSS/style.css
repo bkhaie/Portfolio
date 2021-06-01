@@ -623,7 +623,7 @@ nav {
   height: 400px;
   margin: -20px auto;
   border-radius: 10px;
-  background: white;
+  background: var(--time-line);
   box-shadow: 5px 5px 10px gray, -5px -5px 10px white;
 }
 
