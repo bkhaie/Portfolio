@@ -1,0 +1,3 @@
+De rekenmachine is gemaakt en ik wil nu hem niet meer zichtbaar sinds ik hem niet al de tijd gebruik.
+Mijn idee is om hem expand and collapse able te gaan maken.
+ Leuke idee van internet https://developers.google.com/web/updates/2017/03/performant-expand-and-collapse
