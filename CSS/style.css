@@ -620,9 +620,9 @@ nav {
   margin: 1em 0 0 0.75em;
 }
 
+
+
 /* -----  Calculator */
-
-
 
 .cal-container{
   width: 250px;
@@ -678,3 +678,162 @@ nav {
   background: var(--cal);
   color: var(--time-line);
 }
+
+
+/** -- expand */
+
+
+.expando {
+  
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  will-change: transform;
+}
+
+.expando__inner {
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--time-line);
+  box-shadow: 1px 1px 5px gray, -1px -1px 5px white;
+  position: absolute;
+  will-change: transform;
+}
+
+.expando__inner-inverter {
+  will-change: transform;
+}
+
+.expando__btn-js-expando-expand-btn{
+  color: var(--font-color);
+}
+
+.expando__btn {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--time-line);
+  border: none;
+  outline: var(--title-background);
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: transform;
+  transition:
+      transform 0.1s cubic-bezier(0, 0, 0.31, 1),
+      opacity 0.2s cubic-bezier(0, 0, 0.31, 1);
+}
+
+.expando__content {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform;
+  transform: translateY(20px);
+  transition:
+      transform 0.3s cubic-bezier(0, 0, 0.31, 1),
+      opacity 0.3s cubic-bezier(0, 0, 0.31, 1);
+}
+
+.expando__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.expando__content-list {
+  width: 140px;
+  margin: 0;
+  padding: 30px 0 20px 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+li {
+  line-height: 1.5;
+  padding: 2 20px;
+}
+
+li:hover {
+  background: #555;
+  color: rgb(167, 56, 56);
+}
+
+.item--expanded {
+  animation-name: expandAnimation;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.item__contents--expanded {
+  animation-name: expandContentsAnimation;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.item--collapsed {
+  animation-name: collapseAnimation;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.item__contents--collapsed {
+  animation-name: collapseContentsAnimation;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.item__contents--expanded .expando__content {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.item__contents--expanded .expando__btn {
+  transform: rotate(180deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 10;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: transparent;
+  color: transparent;
+}
+
+.button1 {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.plusgroote {
+  font-size: 30;
+  padding: -25px;
+}
+/*---- end pop expand */ 

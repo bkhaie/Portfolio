@@ -86,8 +86,7 @@
 
 
 
-<!--img-->
-<!--  <img src="Pictures/pfp.png" /> -->
+
 <!--about-me-text-->
 <div class="about-container">
 	<div class="flip-card">
@@ -114,8 +113,63 @@
 
   </div>
 </div>
-  
 
+<div id="myDIV" style="display: none">
+	<div id="mydiv">
+		<div id="mydivheader">
+			<div class="cal-container">
+				<div class="cal-box">	
+					<form name="calculator">
+						<input id="display" type="text" name="display" placeholder="0" readonly>
+						<br>
+						<input class="button" type="button" value="7" onclick="calculator.display.value +='7'">
+						<input class="button" type="button" value="8" onclick="calculator.display.value +='8'">
+						<input class="button" type="button" value="9" onclick="calculator.display.value +='9'">
+						<input class="button mathbutton" type="button" value="+" onclick="calculator.display.value +='+'">
+						<br>
+						<input class="button" type="button" value="4" onclick="calculator.display.value +='4'">
+						<input class="button" type="button" value="5" onclick="calculator.display.value +='5'">
+						<input class="button" type="button" value="6" onclick="calculator.display.value +='6'">
+						<input class="button mathbutton" type="button" value="-" onclick="calculator.display.value +='-'">
+						<br>
+						<input class="button" type="button" value="1" onclick="calculator.display.value +='1'">
+						<input class="button" type="button" value="2" onclick="calculator.display.value +='2'">
+						<input class="button" type="button" value="3" onclick="calculator.display.value +='3'">
+						<input class="button mathbutton" type="button" value="x" onclick="calculator.display.value +='*'">
+						<br>
+						<input class="button clearButton" type="button" value="C"onclick="calculator.display.value =''">
+						<input class="button" type="button" value="0" onclick="calculator.display.value +='0'">
+						<input class="button mathbutton" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+						<input class="button mathbutton" type="button" value="/" onclick="calculator.display.value +='/'">
+						<br />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+  <div class="expando js-expando">
+    <div class="expando__inner js-expando-inner">
+      <div class="expando__inner-inverter js-expando-inner-inverter">
+        <div class="expando__content js-content">
+          <ul class="expando__content-list">
+            <li>  <button class="button1" onclick="myFunction()">🧮Calculator</button> </li>
+            <li>  Upcomming.. </button> </li>
+
+          </ul>
+
+          <button class="expando__close js-expando-collapse-btn">Close</button>
+        </div>
+
+        <button class="expando__btn js-expando-expand-btn">
+			<div class="plusgroote">
+			<B>+</B>
+			</div>
+		  </button>
+      </div>
+    </div>
+  </div>
 
 
 		 <footer> <!--footer--------------->
@@ -134,7 +188,7 @@
 			<p class="copyright">Butter since 1998 ©</p>
 		 </footer> <!--footer end --------------->
 		</main>
-
+<script src="JS/expando.js"></script>
 <script src="JS/dark.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
