@@ -966,18 +966,18 @@ li:hover {
 /*---- end pop expand */ 
 
 
-.poem {
-	margin: 20px 50%;
 
+.cardwork {
+	margin: 1% 50% 
+  
 }
 figure {
 	position: relative;
 	background: url(https://cdnw.nickpic.host/v1TG0s.png);
 	width: 300px;
 	height: 400px;
-	box-sizing: border-box;
-	display: inline-block;
-	margin: 0 auto;
+
+	
 	background-color: rgba(230, 230, 230, 0.7);
 	color: #666;
 	transition: all 0.35s ease;
