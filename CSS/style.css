@@ -529,6 +529,7 @@ label.error {
 
 
 
+
    
    /* label underline focus color */
    .input-field input[type=text]:focus {
@@ -988,7 +989,6 @@ figure p {
 	width: 320px;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-bottom: 5px solid rgba(190, 158, 167, 0.4);
-	font-family: "Special Elite", cursive;
 	padding: 20px;
 	bottom: 5px;
 	position: absolute;
@@ -1000,15 +1000,14 @@ figure p {
 figure figcaption {
 	transform: translateX(-120%);
 	background-color: rgba(255, 255, 255, 0.9);
-	width: 250px;
-	height: 330px;
-	padding: 20px;
+	width: 300px;
+	height: 400px;
+	padding: 10px;
 	position: absolute;
 	top: 0px;
 	bottom: 15px;
 	left: 0px;
 	right: 15px;
-	font-family: "Faustina", serif;
 	font-size: 15px;
 	border: 15px solid rgba(190, 158, 167, 0.4);
 	transition: all 1.5s ease;
@@ -1020,9 +1019,4 @@ figure:hover figcaption {
 }
 figure:hover p {
 	transform: translateX(-120%);
-}
-
-figure .author {
-	text-align: right;
-	margin-top: 25px;
 }
