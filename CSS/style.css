@@ -893,7 +893,7 @@ li {
   padding: 2 20px;
 }
 
-li:hover {
+.expando li:hover {
   background: #555;
   color: rgb(167, 56, 56);
 }
