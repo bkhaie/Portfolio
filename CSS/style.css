@@ -15,6 +15,7 @@
   --shadow: rgb(214, 214, 214);
   --box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
   --cal: black;
+  --transp: rgba(255, 255, 255, 0.6);
 }
 
 [data-theme="dark"] {
@@ -29,6 +30,7 @@
   --shadow: rgb(59, 59, 59);
   --box-shadow: 1px 1px 2px #faf4f4 , -2px -2px 10px #b6acac;
   --cal: white;
+  --transp: rgba(22, 21, 21, 0.6);
 }
 
 
@@ -984,6 +986,7 @@ figure {
 	overflow: hidden;
 	backface-visibility: hidden;
 	box-shadow: 3px 2px 24px 0px rgba(190, 158, 167, 1);
+  
 }
 figure p {
 	width: 320px;
@@ -993,6 +996,7 @@ figure p {
 	bottom: 5px;
 	position: absolute;
 	transition: all 0.45s ease;
+  
 }
 
 /***/
@@ -1011,14 +1015,18 @@ figure figcaption {
 	font-size: 15px;
 	border: 15px solid rgba(190, 158, 167, 0.4);
 	transition: all 1.5s ease;
+  
 }
 
 figure:hover figcaption {
 	transition: all 1s ease;
 	transform: translate(0, 0);
+ 
+  
 }
 figure:hover p {
 	transform: translateX(-120%);
+  
 }
 
 
@@ -1144,10 +1152,11 @@ figure {
 }
 figure p {
 	width: 320px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-bottom: 5px solid rgba(190, 158, 167, 0.4);
+	background-color: var(--font-color);
+	border-bottom: 5px solid rgba(245, 0, 69, 0.4);
 	padding: 20px;
 	bottom: 5px;
+  color: var(--time-line);
 	position: absolute;
 	transition: all 0.45s ease;
 }
@@ -1156,7 +1165,8 @@ figure p {
 
 figure figcaption {
 	transform: translateX(-120%);
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: var(--transp);
+  color: var(--font-color);
 	width: 300px;
 	height: 400px;
 	padding: 10px;
