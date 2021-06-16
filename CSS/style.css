@@ -1187,3 +1187,21 @@ figure:hover figcaption {
 figure:hover p {
 	transform: translateX(-120%);
 }
+
+
+
+.draggable {
+  position: absolute;
+  z-index: 10;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.draggable {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: transparent;
+  color: transparent;
+}
