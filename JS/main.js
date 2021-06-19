@@ -42,3 +42,14 @@
 
 })(jQuery);
 
+
+
+/*Read more button*/
+$('.read-more').click(function() {
+	$(this).prev().slideToggle();
+	if (($(this).text()) == "Read More") {
+		$(this).text("Read Less");
+	} else {
+		$(this).text("Read More");
+	}
+});

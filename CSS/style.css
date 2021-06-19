@@ -1198,3 +1198,20 @@ details p {
 .dropdown ul {
   margin: 0 0 -0.5em;
 }
+
+.read-more-content{
+	display: none;
+	padding-top: 22px;
+}
+.read-more{
+	display: inline-block;
+	margin-top: 8px;
+}.timeline-info {
+	position: relative;
+	background: #f3f1f1;
+	padding: 24px 20px 18px;
+	margin-bottom: 12px;
+	border: 1px solid #f3f1f1;
+	border-radius: 8px;
+	margin-left: 54px;
+}
