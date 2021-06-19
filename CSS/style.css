@@ -1199,19 +1199,20 @@ details p {
   margin: 0 0 -0.5em;
 }
 
-.read-more-content{
+
+/*-- Readmore --*/
+.lees-meer-content{
 	display: none;
-	padding-top: 22px;
+	padding-top: -22px;
 }
-.read-more{
+.lees-meer{
 	display: inline-block;
 	margin-top: 8px;
-}.timeline-info {
-	position: relative;
-	background: #f3f1f1;
-	padding: 24px 20px 18px;
-	margin-bottom: 12px;
-	border: 1px solid #f3f1f1;
-	border-radius: 8px;
-	margin-left: 54px;
+  color: var(--font-color);
+  text-decoration: none;
 }
+
+button:active{
+  color: var(--font-color);
+}
+

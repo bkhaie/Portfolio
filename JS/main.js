@@ -45,11 +45,11 @@
 
 
 /*Read more button*/
-$('.read-more').click(function() {
+$('.lees-meer').click(function() {
 	$(this).prev().slideToggle();
-	if (($(this).text()) == "Read More") {
-		$(this).text("Read Less");
+	if (($(this).text()) == "Lees meer") {
+		$(this).text("Lees minder");
 	} else {
-		$(this).text("Read More");
+		$(this).text("Lees meer");
 	}
 });
