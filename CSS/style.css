@@ -197,6 +197,8 @@ nav {
   
   main {
     background: var(--main-bg);
+    position: fixed;
+    width: 100%;
   }
   * {
     color: var(--font-color);
@@ -465,8 +467,7 @@ label.error {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
- 
+    position: relative;
    }
 
    .social-icons a{
