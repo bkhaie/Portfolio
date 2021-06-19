@@ -132,7 +132,6 @@ input:checked + .slider .feather-sun {
 main {
   
   padding-bottom: 750px;
- 
 }
 
 :root {
@@ -199,6 +198,7 @@ nav {
     background: var(--main-bg);
     position: fixed;
     width: 100%;
+    height: 96%;
   }
   * {
     color: var(--font-color);
@@ -467,7 +467,7 @@ label.error {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
    }
 
    .social-icons a{
