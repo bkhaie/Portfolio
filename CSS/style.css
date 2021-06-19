@@ -1208,7 +1208,7 @@ details summary {
 }
 details p {
   font-size: 0.95rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0rem;
   padding-top: 1rem;
 }
 
@@ -1218,6 +1218,10 @@ details p {
 
 .dropdown small {
  color: var(--info);
- position: absolute;
- top: 155px
+ position: relative;
+ top: -10px;
+}
+
+.dropdown ul {
+  margin: 0 0 -0.5em;
 }
