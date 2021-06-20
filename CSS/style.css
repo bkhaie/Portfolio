@@ -46,6 +46,7 @@ html{
 
 
 /* TOGGLE  */
+
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -131,24 +132,19 @@ input:checked + .slider .feather-sun {
 }
 
 /*-- END Dark theme */
-
+* {
+  color: var(--font-color);
+}
 
 body {
-flex-direction: column;
-min-height: 100%;
-line-height: 1.6;
+min-height: 100vh;
+line-height: 0;
 margin: 0;
+background: var(--main-bg);
 display: flex;
+flex-direction: column;
 }
 
-:root {
-  --navHeight: 70px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 
 nav ul {
@@ -201,27 +197,9 @@ nav {
     background-color: var(--navhover);
   }
   
-  main {
-    background: var(--main-bg);
-    position: flex;
-    width: 100%;
-    height: 100%;
-  }
-  * {
-    color: var(--font-color);
-  }
-
-
-
 
 /*info me */
 
-
-
-
-    
-
-    
    .text-container p{
     margin:45px 0px 25px;
     line-height:0px;
@@ -459,8 +437,7 @@ label.error {
  /* Footer */
   .socialcontainer
   {
-    background-color: rgba(226, 89, 89, 0.356);
-    
+    justify-content: center;
   } 
 
   .socialcontainer h2
@@ -476,11 +453,6 @@ label.error {
   }
 
    
-   footer{
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-   }
 
    .social-icons a{
     width:40px;
@@ -495,6 +467,7 @@ label.error {
    .social-icons{
     background-color: transparent;
     display: flex;
+    justify-content: center;
    }
    .social-icons a:hover{
     background-color:#1b6bebe1;
@@ -816,12 +789,10 @@ label.error {
 
 
 /** -- expand */
-.expando__js-expando{
-  background-color: red;
-}
+
 
 .expando {
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
   position: relative;
   will-change: transform;
@@ -877,7 +848,7 @@ label.error {
 }
 
 .expando__close {
-  position: absolute;
+  content: center;
   right: 10px;
   top: 10px;
   outline: none;
@@ -887,7 +858,7 @@ label.error {
 }
 
 .expando__content-list {
-  width: 140px;
+  width: 150px;
   margin: 0;
   padding: 30px 0 20px 0;
   list-style: none;
@@ -902,6 +873,7 @@ li {
 .expando li:hover {
   background: #555;
   color: rgb(167, 56, 56);
+  box-shadow: var(--shadow);
 }
 
 .item--expanded {
