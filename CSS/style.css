@@ -23,6 +23,7 @@ html{
   --figshadow: 0px 0px 30px 0px #4e4242;
   --bordbottom: 5px solid rgba(83, 3, 26, 0.712);
   --box-shadow2: 2px 2px 12px rgba(1, 1, 1, 1);
+  --trans-background: #383737a9;
 }
 
 [data-theme="dark"] {
@@ -43,6 +44,7 @@ html{
   --figshadow: 0px 0px 30px 0px #ecc7c7;
   --bordbottom: 5px solid rgba(117, 51, 70, 0.89); 
   --box-shadow2: 2px 2px 12px rgb(209, 209, 209); 
+  --trans-background: #000000a9;
 }
 
 
@@ -1200,7 +1202,7 @@ button:active{
 }
 
 .content .content-overlay {
-  background: #000000a9;
+  background: var(--trans-background);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1222,6 +1224,7 @@ button:active{
   width: 100%;
 }
 
+
 .content-details {
   position: absolute;
   text-align: center;
@@ -1230,10 +1233,10 @@ button:active{
 }
 
 .content-details h3{
-  color: var(--font-color);
-  font-weight: 900;
-  letter-spacing: 0em;
-  margin-bottom: 0.5em;
+  color: var(--time-line);
+  text-shadow: var(--box-shadow2);
+  font-weight: 1000;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
