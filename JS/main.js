@@ -45,26 +45,12 @@
 
 
 /*Read more button*/
-$('.lees-meer').click(function() {
-	$(this).prev().slideToggle();
-	if (($(this).text()) == "Lees meer") {
-		$(this).text("Lees minder");
-	} else {
-		$(this).text("Lees meer");
-	}
-});
-
-
-
-
-
-
 function myWarn() {
-  var txt;
-  if (confirm("Press a button!")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
+	var txt;
+	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Bloemenwinkel/Sprint1.html"; {
+	}
   }
-  document.getElementById("demo").innerHTML = txt;
-}
+
+
+
+
