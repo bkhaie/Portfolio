@@ -1,29 +1,41 @@
+function passwd(){
+
+    const password = prompt('Enter the password to download the file:');
+    if(password.toLowerCase() == "khaie"){
+      window.open("folder/history.zip")    
+    }else{
+      alert("incorrect password!! please try again");
+    }
+  }
+
+
+
 function bloemen() {
-	var txt;
+	const txt;
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Bloemenwinkel/Sprint1.html"; {
 	}
   }
 
 function Rekenmachine() {
-var txt;
+const txt;
 if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Rekenmachine/Calculator Project/Calculator v3/MijnErvaringen.html"; {
 }}
 
 
 function boterkaas() {
-	var txt;
+	const txt;
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/BKE/index.html"; {
 }}
 
 
 function kaartspel() {
-	var txt;
+	const txt;
 	if (confirm("Weet u echt het spel downloaden?")) document.location = "Projecten/Hoger-Lager-main/Hoger-Lager-main.7z"; 
 }
 
 
 function dicespel() {
-	var txt;
+	const txt;
 	if (confirm("Weet u echt het spel downloaden?")) document.location = "Projecten/Dicegame/dicegame.7z"; 
 }
 
