@@ -22,6 +22,13 @@ function kaartspel() {
 }
 
 
+function dicespel() {
+	var txt;
+	if (confirm("Weet u echt het spel downloaden?")) document.location = "Projecten/Dicegame/dicegame.7z"; 
+}
+
+
+
 
 
 
