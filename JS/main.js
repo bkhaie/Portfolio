@@ -42,7 +42,15 @@
 
 })(jQuery);
 
-
+/*Readmore button*/
+$('.lees-meer').click(function() {
+	$(this).prev().slideToggle();
+	if (($(this).text()) == "Lees meer") {
+		$(this).text("Lees minder");
+	} else {
+		$(this).text("Lees meer");
+	}
+});
 
 /*warn button*/
 
