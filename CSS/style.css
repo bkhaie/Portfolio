@@ -195,6 +195,7 @@ nav {
   
   nav {
     background: var(--navBg);
+    box-shadow: 1px 1px 5px gray, -1px -1px 5px white;
   }
   
   nav ul li:hover {
@@ -204,96 +205,106 @@ nav {
 
 /*info me */
 
-   .text-container p{
-    margin:45px 0px 25px;
-    line-height:0px;
-   }
-   .text-container button{
-    width:130px;
-    height:42px;
-    border-radius:10px;
-    font-family:calibri;
-    font-weight:bold;
-    font-size: 14px;
-    outline:none;
-    margin:0px 10px;
-       }
-       
+
 .about-container{
-    width:77%;
-    height:330px;
-    border-radius:20px;
-    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.2);
-    display: flex;
-    margin: 0%  auto 20px auto;
-    top: 0px;
-    position: relative;
-    justify-content:center;
-    align-items: center;
-   }
 
-   .about-text{
-    width:500px;
-   } 
-   .about-text p:nth-child(1){
-    font-family: calibri;
-    font-size:38px;
-    line-height:40px;
-   }
-   .about-text p:nth-child(2){
-    font-size:22px;
-    font-family: calibri;
-    line-height:5px;
-   }
-   .about-text p:nth-child(3),.about-text p:nth-child(4){
-    font-family:calibri;
-    font-size:18px;
-   }
-   .about-text button{
-    width:120px;
-    height: 40px;
-    color:#f5f5f5;
-    outline:none;
-    border:none;
-    font-family: calibri;
-    background-color:#262525;
-   }
+  text-align: center;
+  font-size: 120%;
+  margin: 1% 20% 1% 20%;
+  border-radius: 10px;
+  background: var(--time-line);
+  box-shadow: 1px 1px 5px gray, -1px -1px 5px white;
+}
 
 
-/* Contact me End */
-.form-control {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0;
-  background: none; }
-  .form-control:active, .form-control:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-color: #000; }
+.about-container h4{
+  font-size: 150%;
+}
+.about-container h6{
+  font-size: 90%;
+  position: relative;
+  margin-top: -10;
+}
 
-.col-form-label {
-  color: #000;
-  font-size: 13px; }
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: var(--title-background);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+}
 
-.btn, .form-control, .custom-select {
-  height: 45px;
-  border-radius: 0; }
 
-.custom-select {
-  border: none;
-  border-bottom: 1px solid #ccc;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0; }
-  .custom-select:active, .custom-select:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-color: #000; }
 
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 50%;
+}
+
+#container .product-details h1{
+	display: inline-block;
+  margin-bottom: -5%;
+	font-size: 20px;	
+}
+
+
+
+.product-image {
+	transition: all 0.5s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+  color: #FFF;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: var(--trans-background);
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+
+    text-align: left;
+    font-size: 105%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: #FFF;
+}
+
+.ID{
+  color: #FFF;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{
+transition: 0.3s ease;
+color: #FFF;
+}
+.info ul li:hover{
+  transform: translateX(50px) scale(1.3);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
+
+/* Button */
 .btn {
   border: none;
   border-radius: 0;
@@ -311,13 +322,14 @@ nav {
     font-family: calibri;
   }
 
+
+
   .player {
 
       letter-spacing: .5rem;
       text-transform: uppercase;
       font-size: 120%;
       border: none;
-      background-color: transparent;
       font-family: calibri;
     }
   
@@ -335,128 +347,9 @@ nav {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-.contact-wrap {
-  -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-  background: #fff; }
-  .contact-wrap .col-form-label {
-    font-size: 14px;
-    color: #b3b3b3;
-    margin: 0 0 10px 0;
-    display: inline-block;
-    padding: 0; }
-  .contact-wrap .form, .contact-wrap .contact-info {
-    padding: 40px; }
-  .contact-wrap .contact-info {
-    color: rgba(255, 255, 255, 0.5); }
-    .contact-wrap .contact-info ul li {
-      margin-bottom: 15px;
-      color: rgba(255, 255, 255, 0.5); }
-      .contact-wrap .contact-info ul li .wrap-icon {
-        font-size: 20px;
-        color: #fff;
-        margin-top: 5px; }
-  .contact-wrap .form {
-    background: #fff; }
-    .contact-wrap .form h3 {
-      color: #000;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 30px; }
-  .contact-wrap .contact-info {
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; }
-    .contact-wrap .contact-info a {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-    @media (max-width: 1199.98px) {
-      .contact-wrap .contact-info {
-        height: 400px !important; } }
-    .contact-wrap .contact-info h3 {
-      color: #fff;
-      font-size: 20px;
-      margin-bottom: 30px; }
 
-label.error {
-  font-size: 12px;
-  color: red; }
-
-#message {
-  resize: vertical; }
-
-#form-message-warning, #form-message-success {
-  display: none; }
-
-#form-message-warning {
-  color: #B90B0B; }
-
-#form-message-success {
-  color: #55A44E;
-  font-size: 18px;
-  font-weight: bold; }
-
-.submitting {
-  float: left;
-  width: 100%;
-  padding: 10px 0;
-  display: none;
-  font-weight: bold;
-  font-size: 12px;
-  color: #000; }
  /* Flip card end  */
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    margin-top: -40px;
 
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: transparent;
-    transform: rotateY(180deg);
-    border: transparent;
-    font-family: myriad pro;
-
-  }
-
-   /* Flip card end  */
    
 
  /* Footer */
@@ -697,11 +590,11 @@ td {
 }
 
 td + td {
-  border-left: 2px solid black;
+  border-left: 2px solid var(--cal);
 }
 
 tr + tr td {
-  border-top: 2px solid black;
+  border-top: 2px solid var(--cal);
 }
 
 /* -----  Calculator */
