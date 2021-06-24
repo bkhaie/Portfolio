@@ -10,7 +10,7 @@ if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecte
 }}
 
 
-function BKE() {
+function boterkaas() {
 	var txt;
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/BKE/index.html"; {
 }}
