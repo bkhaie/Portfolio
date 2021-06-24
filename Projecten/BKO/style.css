@@ -1,0 +1,28 @@
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+td {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 60px;
+}
+
+td + td {
+  border-left: 1px solid black;
+}
+
+tr + tr td {
+  border-top: 1px solid black;
+}
+.board {
+
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  font-family: 'Lato', sans-serif;
+  border: solid 1px black;
+}
