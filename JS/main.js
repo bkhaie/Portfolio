@@ -12,7 +12,7 @@ if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecte
 
 function bko() {
 	var txt;
-	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/bko/index.html"; {
+	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/bke/index.html"; {
 }}
 
 
