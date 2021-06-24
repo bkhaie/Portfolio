@@ -15,8 +15,4 @@ function bko() {
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/bko/index.html"; {
 }}
 
-function kaartspel() {
-	var txt;
-	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/HogerLager/bin/Debug/netcoreapp3.1/HogerLager"; {
-}}
 
