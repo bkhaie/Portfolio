@@ -1,19 +1,21 @@
 function bloemen() {
-	const txt;
+	var txt;
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Bloemenwinkel/Sprint1.html"; {
 	}
   }
 
 function Rekenmachine() {
-	const txt;
-	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Rekenmachine/Calculator Project/Calculator v3/MijnErvaringen.html"; {
+var txt;
+if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Rekenmachine/Calculator Project/Calculator v3/MijnErvaringen.html"; {
 }}
 
 
 function boterkaas() {
-	const txt;
+	var txt;
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/BKE/index.html"; {
 }}
+
+
 
 
 
