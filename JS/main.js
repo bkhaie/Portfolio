@@ -16,3 +16,13 @@ function bko() {
 }}
 
 
+function kaartspel() {
+	var txt;
+	if (confirm("Weet u echt het spel downloaden?")) document.location = "Projecten/Hoger-Lager-main/Hoger-Lager-main.7z"; 
+}
+
+
+
+
+
+
