@@ -58,5 +58,3 @@ const startNewGame = () => {
   })
 }
 
-cells.forEach(cell => cell.addEventListener("click", markCell))
-document.getElementById("Newgame").addEventListener("click", startNewGame)
