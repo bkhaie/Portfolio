@@ -10,9 +10,9 @@ if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecte
 }}
 
 
-function bko() {
+function BKE() {
 	var txt;
-	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/bke/index.html"; {
+	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/BKE/index.html"; {
 }}
 
 
