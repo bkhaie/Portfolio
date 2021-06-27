@@ -15,7 +15,10 @@ function boterkaas() {
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/BKE/index.html"; {
 }}
 
-
+function pizzames() {
+	var txt;
+	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Pizza mes/index.html"; {
+}}
 
 
 
