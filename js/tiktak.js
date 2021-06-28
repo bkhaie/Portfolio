@@ -19,6 +19,19 @@ for (let i = 0; i < boxes.length; i++) {
       //changes player turns
       currentPlayer = currentPlayer == "x" ? "o" : "x";
 
+
+
+// if( currentPlayer == "x")
+// {
+//  currentPlayer = x
+// }
+// else
+// {
+//  -> o
+// }
+
+
+
       //changes player's turn label on top of the game
       document.getElementById(
         "player"
