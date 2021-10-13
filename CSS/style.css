@@ -25,6 +25,7 @@ html{
   --box-shadow2: 2px 2px 12px rgba(1, 1, 1, 1);
   --trans-background: #383737a9;
   --contact: #5e4d4d;
+  --contact-box: 1px 1px 1px 1px rgb(0, 0, 0);
 }
 
 [data-theme="dark"] {
@@ -47,6 +48,7 @@ html{
   --box-shadow2: 2px 2px 12px rgb(209, 209, 209); 
   --trans-background: #000000a9;
   --contact: #1e1e20;
+  --contact-box: 1px 1px 1px 1px rgb(255, 255, 255);
 }
 
 
@@ -1123,42 +1125,51 @@ button:active{
 
 /* contact pagina */
 
+
 .contact-container{
-  position: relative;
-  margin-top: 10%;
-  background-color: red;
-  padding-left: 40%;
-}
-.contact-form-area{
-  background: var(--contact);
-  padding:30px;
-  border-radius:5px;
   box-shadow: var(--box-shadow2);
-  position: relative;
-  
+  text-align: center;
+  margin: 5% 20% 1% 20%;
+  border: 10% 10% 10%;
+  border-radius:10px;
+  background-color: var(--contact);
 }
-.contact-form-area form h3{
-  font-size:var(--font-color);
-  font-size: 50px;
-  margin-bottom:24px;
-  
+
+.contact{
+  color: rgba(255, 255, 255, .55);
 }
+
+
+
+
+
+.form-group {
+  width: 90%;
+  margin: auto;
+  box-shadow: var(--contact-box);
+  border-radius:5px;
+}
+
 .form-control {
-  height: 35px;
-  margin: 10px;
-  border: none;
-  
+	display: block;
+  margin: 1% 1% 1% 0% ;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: var(--transp);
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
-.contact-form-area form .contact-btn{
-  background: #dcdcdc;
-  padding: 10px 70px;
-  color: #000000;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.contact-form-area form .contact-btn:hover{
-  background:#fff;
+
+.form-control-active {
+background-color: red;
+color: red;
 }
