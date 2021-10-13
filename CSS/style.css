@@ -24,6 +24,7 @@ html{
   --bordbottom: 5px solid rgba(83, 3, 26, 0.712);
   --box-shadow2: 2px 2px 12px rgba(1, 1, 1, 1);
   --trans-background: #383737a9;
+  --contact: #5e4d4d;
 }
 
 [data-theme="dark"] {
@@ -45,6 +46,7 @@ html{
   --bordbottom: 5px solid rgba(117, 51, 70, 0.89); 
   --box-shadow2: 2px 2px 12px rgb(209, 209, 209); 
   --trans-background: #000000a9;
+  --contact: #1e1e20;
 }
 
 
@@ -1117,4 +1119,46 @@ button:active{
 .content:hover h3 {
   -webkit-transform: translate3d(-1rem, 0, 0);
           transform: translate3d(-1rem, 0, 0);
+}
+
+/* contact pagina */
+
+.contact-container{
+  position: relative;
+  margin-top: 10%;
+  background-color: red;
+  padding-left: 40%;
+}
+.contact-form-area{
+  background: var(--contact);
+  padding:30px;
+  border-radius:5px;
+  box-shadow: var(--box-shadow2);
+  position: relative;
+  
+}
+.contact-form-area form h3{
+  font-size:var(--font-color);
+  font-size: 50px;
+  margin-bottom:24px;
+  
+}
+.form-control {
+  height: 35px;
+  margin: 10px;
+  border: none;
+  
+}
+.contact-form-area form .contact-btn{
+  background: #dcdcdc;
+  padding: 10px 70px;
+  color: #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact-form-area form .contact-btn:hover{
+  background:#fff;
 }

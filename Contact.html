@@ -168,42 +168,41 @@
 	</div>
 </div>
 
-<div class="fcf-body">								<!--- Contact pagina  -->
+<section id="contact">								<!--- Contact page  -->
 
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact pagina</h3>
+	<div id="map"></div>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Jouw Naam</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
+	<div class="contact-container">
 
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Je email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
+		<!-- Example row of columns -->
+		<div class="row-contact">
+			<div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
+				<div class="contact-form-area">
+					<form>
+						<h3>Contact</h3>	
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Name"  required >
+						</div>
 
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Je bericht</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Your Email" required>
+						</div>
 
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Verzend bericht</button>
-        </div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Subject">
+						</div>
 
-    </form>
-    </div>
+						<div class="form-group">
+							<textarea class="form-control" rows="7" placeholder="Message" required></textarea>
+						</div>
 
-</div>
+						<button type="submit" class="btn btn-primary contact-btn">SEND</button>
+					</form>
+				</div>	
+			</div>
+		</div>
+	</div> <!-- /container -->       
+</section>
 
 </main>
 
