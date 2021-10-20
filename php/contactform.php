@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['verzenden'])) 
+if (isset($_POST['verzenden'])) {
     $name = $_POST['naam'];
     $subject = $_POST['onderwerp'];
     $mailFrom = $_POST['mail'];
@@ -12,5 +12,5 @@ if (isset($_POST['verzenden']))
 
     mail($mailTo, $onderwerp, $txt, $headers);
     header("Location: Contact.php?mailsend");
-
+}
 ?>
