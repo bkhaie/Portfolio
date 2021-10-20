@@ -175,16 +175,21 @@
 	<form>
 		<h3 class="contact">Contact</h3>	
 		<div class="form-group">
-			<input type="text" class="form-control" name="naam" placeholder="Naam"  required >
-		
-			<input type="text" class="form-control" name="mail" placeholder="Email" required>
-		
-			<input type="text" class="form-control" name="onderwerp" placeholder="Onderwerp">
-
-			<textarea class="form-control" rows="7" name="bericht" placeholder="Bericht" required></textarea>
+			<input type="text" class="form-control" name="Naam" placeholder="Volledige naam"  required >
 		</div>
 
-		<button type="Verzenden" name="verzenden" class="btn btn-primary contact-btn">SEND</button>
+		<div class="form-group">
+			<input type="email" class="form-control" name="Email" placeholder="Email" required>
+		</div>
+
+		<div class="form-group">
+			<input type="text" class="form-control" name="Onderwerp" placeholder="Onderwerp">
+		</div>
+
+		<div class="form-group">
+			<textarea class="form-control" rows="7" name="Bericht" placeholder="Schrijf uw bericht." required></textarea>
+		</div>
+		<button name="versturen" class="btn btn-primary contact-btn">VERSTUUR</button>
 	</form>
 </div>
 
