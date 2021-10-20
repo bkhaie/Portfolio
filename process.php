@@ -1,21 +1,21 @@
 <?php
 
-if(isset($_POST['versturen']))
+if(isset($_POST['btn-send']))
 {
-    $Gebruikersnaam = $_POST['Naam'];
+    $UserName = $_POST['UName'];
     $Email = $_POST['Email'];
-    $Onderwerp = $_POST['Onderwerp'];
-    $Bericht = $_POST['Bericht'];
+    $Subject = $_POST['Subject'];
+    $Msg = $_POST['msg'];
 
-    if(empty($Gebruikersnaam) || empty($Email) || empty($Onderwerp) || empty($Bericht))
+    if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
     {
-        header('location:index.php?error');
+        header('location:Contact.php?error');
     }
     else
     {
         $to = "info@badrkit.nl";
 
-        if(mail($to,$Onderwerp,$Bericht,$Email))
+        if(mail($to,$Subject,$Msg,$Email))
         {
             header("location:Contact.php?success");
         }

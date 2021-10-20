@@ -171,26 +171,29 @@
 </div>
 
 
-<div class="contact-container"> 						<!--Contact-->
-	<form>
-		<h3 class="contact">Contact</h3>	
-		<div class="form-group">
-			<input type="text" class="form-control" name="Naam" placeholder="Volledige naam"  required >
-		</div>
+<div class="contact-container"> 				<!--Contact-->
+<?php
+		$Msg = "";
+		if(isset($_GET['error']))
+		{
+			$Msg = " Please Fill in the Blanks ";
+			echo '<div class="alert alert-danger">'.$Msg.'</div>';
+		}
 
-		<div class="form-group">
-			<input type="email" class="form-control" name="Email" placeholder="Email" required>
-		</div>
+		if(isset($_GET['success']))
+		{
+			$Msg = " Your Message Has Been Sent ";
+			echo '<div class="alert alert-success">'.$Msg.'</div>';
+		}
 
-		<div class="form-group">
-			<input type="text" class="form-control" name="Onderwerp" placeholder="Onderwerp">
-		</div>
-
-		<div class="form-group">
-			<textarea class="form-control" rows="7" name="Bericht" placeholder="Schrijf uw bericht." required></textarea>
-		</div>
-		<button name="versturen" class="btn btn-primary contact-btn">VERSTUUR</button>
-	</form>
+?>						
+	<form action="process.php" method="post">
+                        <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
+                        <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
+                        <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
+                        <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                        <button class="btn btn-success" name="btn-send"> Send </button>
+                    </form>
 </div>
 
 </main>
