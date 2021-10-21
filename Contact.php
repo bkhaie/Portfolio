@@ -180,13 +180,13 @@
                     $Msg = "";
                     if(isset($_GET['error']))
                     {
-                        $Msg = " Please Fill in the Blanks ";
+                        $Msg = " Vull de lege velden in. ";
                         echo '<div class="alert alert-danger">'.$Msg.'</div>';
                     }
 
                     if(isset($_GET['success']))
                     {
-                        $Msg = " Your Message Has Been Sent ";
+                        $Msg = " Uw bericht is verzonden! ";
                         echo '<div class="alert alert-success">'.$Msg.'</div>';
                     }
 
@@ -194,10 +194,10 @@
                 
                 
                     <form action="process.php" method="post">
-                        <input type="text" name="UName" placeholder="User Name" class="form-control">
+                        <input type="text" name="UName" placeholder="Naam" class="form-control">
                         <input type="email" name="Email" placeholder="Email" class="form-control">
-                        <input type="text" name="Subject" placeholder="Subject" class="form-control ">
-                        <textarea name="msg" class="form-control " placeholder="Write The Message"></textarea>
+                        <input type="text" name="Subject" placeholder="onderwerp" class="form-control ">
+                        <textarea name="msg" class="form-control " placeholder="Schrijf uw bericht ..."></textarea>
                         <button class="btn btn-success" name="btn-send"> Send </button>
                     </form>
 
