@@ -32,7 +32,7 @@
 				<a class="nav-link" href="Projecten.html">Projecten</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="Contact.html">Contact</a>
+				<a class="nav-link" href="Contact.php">Contact</a>
 			</li> 
 			<div class="theme-switch-wrapper"> 			<!--- thema switcher   . -->	
 				<label class="theme-switch" for="checkbox">
@@ -171,30 +171,39 @@
 </div>
 
 
-<div class="contact-container"> 				<!--Contact-->
-<?php
-		$Msg = "";
-		if(isset($_GET['error']))
-		{
-			$Msg = " Please Fill in the Blanks ";
-			echo '<div class="alert alert-danger">'.$Msg.'</div>';
-		}
+<div class="contact-container">
 
-		if(isset($_GET['success']))
-		{
-			$Msg = " Your Message Has Been Sent ";
-			echo '<div class="alert alert-success">'.$Msg.'</div>';
-		}
+    
+                    <h2 class="text-center py-2"> Contact Us </h2>
+                    <hr>
+                    <?php
+                    $Msg = "";
+                    if(isset($_GET['error']))
+                    {
+                        $Msg = " Please Fill in the Blanks ";
+                        echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                    }
 
-?>						
-	<form action="process.php" method="post">
-                        <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
-                        <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
-                        <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
-                        <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                    if(isset($_GET['success']))
+                    {
+                        $Msg = " Your Message Has Been Sent ";
+                        echo '<div class="alert alert-success">'.$Msg.'</div>';
+                    }
+
+                    ?>
+                
+                
+                    <form action="process.php" method="post">
+                        <input type="text" name="UName" placeholder="User Name" class="form-control">
+                        <input type="email" name="Email" placeholder="Email" class="form-control">
+                        <input type="text" name="Subject" placeholder="Subject" class="form-control ">
+                        <textarea name="msg" class="form-control " placeholder="Write The Message"></textarea>
                         <button class="btn btn-success" name="btn-send"> Send </button>
                     </form>
+
 </div>
+
+
 
 </main>
 
