@@ -239,12 +239,13 @@ nav {
 	margin: 5em auto;
 	height: 375px;
 	width: 725px;
+  position: relative;
 }
 
 
 
 .product-details {
-	position: relative;
+	
 	text-align: left;
 	overflow: hidden;
 	padding: 30px;
