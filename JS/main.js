@@ -20,6 +20,14 @@ function pizzames() {
 	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/Pizza mes/index.html"; {
 }}
 
+function healthone(){
+	const password = prompt('Voer het wachtwoord in:');
+	if(password.toLowerCase() == "khaie"){
+		document.location = "Projecten/healthone/Templates/home.php";
+	}else{
+	  alert("Foute wachtwoord!! Probeer opnieuw");
+	}
+  }
 
 
  function dicespel(){
@@ -35,16 +43,6 @@ function kaartspel(){
 	const password = prompt('Voer het wachtwoord in:');
 	if(password.toLowerCase() == "khaie"){
 	  window.open("Projecten/Hoger-Lager-main/Hoger-Lager-main.7z")    
-	}else{
-	  alert("Foute wachtwoord!! Probeer opnieuw");
-	}
-  }
-
-
-  function healthone(){
-	const password = prompt('Voer het wachtwoord in:');
-	if(password.toLowerCase() == "khaie"){
-	  window.open("https://www.google.com")    /* Projecten/healthone/Templates/home.php */
 	}else{
 	  alert("Foute wachtwoord!! Probeer opnieuw");
 	}
