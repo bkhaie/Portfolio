@@ -44,7 +44,7 @@ function kaartspel(){
   function healthone(){
 	const password = prompt('Voer het wachtwoord in:');
 	if(password.toLowerCase() == "khaie"){
-	  window.open("Projecten/healtone/public/index.php")    
+	  window.open("https://www.google.com")    /* Projecten/healthone/Templates/home.php */
 	}else{
 	  alert("Foute wachtwoord!! Probeer opnieuw");
 	}
