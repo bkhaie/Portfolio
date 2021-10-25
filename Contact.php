@@ -191,8 +191,7 @@
                     }
 
                     ?>
-                
-                
+
                     <form action="process.php" method="post">
                         <input type="text" name="UName" placeholder="Naam" class="form-control">
                         <input type="email" name="Email" placeholder="Email" class="form-control">
