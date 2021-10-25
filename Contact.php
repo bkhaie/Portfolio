@@ -1,3 +1,7 @@
+<?php
+	include_once 'Includes.php';
+?>
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -12,6 +16,7 @@
 
 <body class="light-theme">
 
+$conn;
 
 <nav class="navbar navbar-expand-lg navbar-dark" >  <!--- Navbar     -->
 		<a class="navbar-brand" >Portfolio</a>
@@ -171,7 +176,7 @@
 </div>
 
 
-<div class="contact-container">
+<div class="contact-container">					<!--- Contact php  -->	
 
     
                     <h2 class="text-center py-2"> Contact Us </h2>
