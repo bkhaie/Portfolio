@@ -1,6 +1,7 @@
-<?php
+
+<!--- <?php
 	include_once 'Includes.php';
-?>
+	?>-->
 
 <html>
 	<head>
@@ -16,7 +17,6 @@
 
 <body class="light-theme">
 
-$conn;
 
 <nav class="navbar navbar-expand-lg navbar-dark" >  <!--- Navbar     -->
 		<a class="navbar-brand" >Portfolio</a>

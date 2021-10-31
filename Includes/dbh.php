@@ -2,7 +2,7 @@
 
 $dbServername = "sftp://badrkit.nl";
 $dbUsername = "badrkit.nl";
-$dbPassword = "zAPbQ9z8N9NQ";
+$dbPassword = "";
 $dbName = "loginsystem";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
