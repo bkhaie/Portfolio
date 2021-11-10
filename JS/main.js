@@ -23,7 +23,7 @@ function pizzames() {
 function healthone(){
 	const password = prompt('Voer het wachtwoord in:');
 	if(password.toLowerCase() == "khaie"){
-		document.location = "Projecten/healthone/Templates/home.php";
+		document.location = "Projecten/healthone/public/home.php";
 	}else{
 	  alert("Foute wachtwoord!! Probeer opnieuw");
 	}
