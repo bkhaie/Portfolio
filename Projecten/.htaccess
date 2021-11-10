@@ -1,1 +1,9 @@
-RedirectMatch 301 ^/(.*)$    https://badrkit.nl/Projecten/healthone/Templates/home.php
+# enable mod_rewrite
+RewriteEngine On
+
+# RewriteCond = define rule condition
+# HTTP_REFERER = check from where the request originated
+# ! = exclude 
+# ^ = start of string
+# [NC] = case insensitive search
+RewriteCond %{HTTP_REFERER} !^http:
