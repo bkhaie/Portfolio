@@ -210,10 +210,7 @@
 <div class="row">
                 <div class="col-md-10 mx-auto d-block">
 
-                    <p>Zie hieronder de openingstijden en locatie van sportcenter HealthOne. 
-                        <br>Dit zijn ook de openingstijden van de bar die zich bevindt in sportcenter HealthOne.
-                        <br>We zijn dagelijks volgens de openingstijden bereikbaar via 015 257 89 24.
-                        <br>U kunt bij ons gratis parkeren op het parkeerterrein dat we delen met de voetbalvereniging.
+                    <p>Zie hieronder mijn beschikbaarheden
                     </p>
 
                     <?php
