@@ -48,5 +48,10 @@ function kaartspel(){
 	}
   }
 
+  
+function zuzu() {
+	var txt;
+	if (confirm("Wilt u echt naar een ander pagina?")) document.location = "Projecten/zuzu/zuzu.php"; {
+}}
 
 

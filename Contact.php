@@ -210,32 +210,29 @@
 <div class="row">
                 <div class="col-md-10 mx-auto d-block">
 
-                    <p>Zie hieronder de openingstijden en locatie van sportcenter HealthOne. 
-                        <br>Dit zijn ook de openingstijden van de bar die zich bevindt in sportcenter HealthOne.
-                        <br>We zijn dagelijks volgens de openingstijden bereikbaar via 015 257 89 24.
-                        <br>U kunt bij ons gratis parkeren op het parkeerterrein dat we delen met de voetbalvereniging.
+                    <p>Zie hieronder mijn beschikbaarheden. 
                     </p>
-
+<div class="beschikbaar-container">
                     <?php
                         try {
-                            $db = new PDO("mysql:host=localhost;dbname=healthone","root", "");
-                            $query = $db->prepare ("SELECT * FROM openingstijden");
+                            $db = new PDO("mysql:host=localhost;dbname=beschikbaarheden","root", "");
+                            $query = $db->prepare ("SELECT * FROM beschikbaarheden");
                             $query->execute();
                             $result = $query->fetchAll(PDO::FETCH_ASSOC);
-                            echo "<table>";
+                            echo "</>";
                             foreach ($result as &$data) {
                                 echo "<td>" . $data ["day"] . " ";
                                 echo "<td>" . $data ["time"] . "<br>";
                                 echo "</tr>";
                             }
-                            echo "</table>";
+                            echo "</>";
                         } catch(PDOException $e) {
                             die("Error!: " . $e->getMessage());
                         }
                     ?>                    
                 </div>
             </div>
-
+			</div>
 
 </main>
 
